@@ -1,4 +1,4 @@
-#video {
+/* #video {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
   width: 320px;
@@ -67,4 +67,10 @@ input[type="file"] {
   cursor: pointer;
   background: white;
   margin: 10px 0;
+} */
+
+.hello {
+  font-family: Breite Grotesk, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
