@@ -11,27 +11,24 @@
       class="contentarea"
       style="display: flex; flex-direction: column; justify-content: center"
     >
-      <div>Hello</div>
-      <label for="file-upload" class="custom-file-upload">
-        <i class="fa fa-cloud-upload"></i> Custom Upload
-      </label>
-      <input id="file-upload" type="file" />
-      <div style="display: flex; justify-content: center; padding: 1em">
+      <div style="display: flex; justify-content: center; padding: 30px">
         <img
-          width="100"
+          width="200"
           src="https://dev.app.skin.software/static/media/software-logo.832d22da.svg"
           alt="software logo"
         />
       </div>
-
       <h1>Follow up consultation</h1>
-      <label for="file-upload" class="custom-file-upload">
-        Custom Upload
+      <p>
+        Upload a photo of your symptom board so your doctor can guide you
+        through next steps.
+      </p>
+      <!-- <label for="file-upload" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i>Take photo 📷
       </label>
-      <input id="file-upload" accept="image/*" type="file" capture="camera" />
-      <!-- <input type="file" accept="image/*" width="100" capture="camera" /> -->
-
-      <p>Take a photo of your symptom board to show your doctor.</p>
+      <input id="file-upload" type="file" />
+      <button class="start">Start Follow up Consultation</button>
+      <div>hello</div> -->
       <div class="camera">
         <video id="video">Video stream not available.</video>
         <button id="startbutton">Take photo</button>
@@ -40,15 +37,6 @@
       <div class="output">
         <img id="photo" alt="The screen capture will appear in this box." />
       </div>
-      <p>
-        Visit our article
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos"
-        >
-          Taking still photos with WebRTC</a
-        >
-        to learn more about the technologies used here.
-      </p>
     </div>
   </body>
 </html>
