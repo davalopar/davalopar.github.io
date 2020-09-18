@@ -25,6 +25,9 @@
     photo = document.getElementById("photo");
     startbutton = document.getElementById("startbutton");
 
+    var image = document.getElementById("output");
+    image.src = URL.createObjectURL(event.target.files[0]);
+
     navigator.mediaDevices
       .getUserMedia({ video: true, audio: false })
       .then(function (stream) {
