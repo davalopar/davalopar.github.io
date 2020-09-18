@@ -1,19 +1,35 @@
-<p>
-  <input
-    type="file"
-    accept="image/*"
-    name="image"
-    id="file"
-    onchange="loadFile(event)"
-    style="display: none"
-  />
-</p>
-<p><label for="file" style="cursor: pointer">Upload Image</label></p>
-<p><img id="output" width="200" /></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Software - Follow up consult</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+    <!-- <script src="capture.js"></script> -->
+  </head>
+  <body>
+    <img
+      width="100"
+      src="https://dev.app.skin.software/static/media/software-logo.832d22da.svg"
+      alt="software logo"
+    />
+    <p>
+      <input
+        type="file"
+        accept="image/*"
+        name="image"
+        id="file"
+        onchange="loadFile(event)"
+        style="display: none"
+      />
+    </p>
+    <p><label for="file" style="cursor: pointer">Upload Image</label></p>
+    <p><img id="output" width="200" /></p>
+  </body>
 
-<script>
-  var loadFile = function (event) {
-    var image = document.getElementById("output");
-    image.src = URL.createObjectURL(event.target.files[0]);
-  };
-</script>
+  <script>
+    var loadFile = function (event) {
+      var image = document.getElementById("output");
+      image.src = URL.createObjectURL(event.target.files[0]);
+    };
+  </script>
+</html>
