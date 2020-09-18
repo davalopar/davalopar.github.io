@@ -11,6 +11,10 @@
       class="contentarea"
       style="display: flex; flex-direction: column; justify-content: center"
     >
+      <label for="file-upload" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Custom Upload
+      </label>
+      <input id="file-upload" type="file" />
       <div style="display: flex; justify-content: center; padding: 1em">
         <img
           width="100"
@@ -20,7 +24,11 @@
       </div>
 
       <h1>Follow up consultation</h1>
-      <input type="file" accept="image/*" capture="camera" />
+      <label for="file-upload" class="custom-file-upload">
+        Custom Upload
+      </label>
+      <input id="file-upload" accept="image/*" type="file" capture="camera" />
+      <!-- <input type="file" accept="image/*" width="100" capture="camera" /> -->
 
       <p>Take a photo of your symptom board to show your doctor.</p>
       <div class="camera">
